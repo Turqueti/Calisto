@@ -1,6 +1,29 @@
 # Calisto JupiterWeb Web Scrapper
 
+## Instalação
+Para rodar a Calisto é necessário instalar os seguintes pre-requisitos:
+* o navegador [firefox](https://www.mozilla.org/pt-BR/firefox/new/)
+* o [geckcodriver](https://github.com/mozilla/geckodriver/releases) responsável por criar uma janela que o robô possa controlar
+* o [python3](https://www.python.org/downloads/)
+* e o [pip3](https://pip.pypa.io/en/stable/installing/)
 
+Uma vez que as dependências foram instaladas basta clonar o repositório:
+
+```Shell
+git clone https://github.com/Turqueti/Calisto.git
+
+```
+mudar para a pasta do projeto:
+
+```Shell
+cd Calisto
+```
+
+E instalar as bibliotecas requeridas:
+
+```Shell
+pip3 install -r requirements.txt
+```
 ## Descrição
 Calisto é um projeto inicialmente pessoal, ela é um scrapper do jupiterweb, que tem como objetivo retirar as informações de horário das aulas do site e gerar um csv que seja "importavel" para o google calendar
 
@@ -12,13 +35,6 @@ user = '' #Nusp do usuário
 password = ''#Senha de acesso ao jupiterweb
 ```
 lembrando que, em nenhum momento a ferramenta grava ou envia as credenciais do usuário para nenhum serviço a não ser o próprio jupiterweb
-
-Calsito usa:
- * selenium: para fazer as funcionalidades de entrar no jupiter e retirar os conteudos
- * a função sleep da biblioteca time: para esperar que alguns elemenos da página carreguem
- * a biblioteca re: para fazer uma comparação de regex na hora de buscar os horários
-
-
 
 
 ## Próximos Passos
